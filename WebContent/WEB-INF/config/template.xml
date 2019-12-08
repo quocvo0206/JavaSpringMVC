@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+ 	<!-- ADMIN TEMPLATE -->
+	<definition name="admin.template" template="/WEB-INF/templates/admin/template.jsp">
+	    <put-attribute name="css" value="" />
+	    <put-attribute name="header" value="/WEB-INF/templates/admin/header.jsp" /><!-- no change -->
+	    <put-attribute name="left-sidebar" value="/WEB-INF/templates/admin/left-sidebar.jsp" /><!-- no change -->
+	    <put-attribute name="content" value="" />
+	    <put-attribute name="right-sidebar" value="/WEB-INF/templates/admin/right-sidebar.jsp" /><!-- no change -->
+	    <put-attribute name="js" value="" />
+	</definition>
+	
+  	<definition name="admin.index.index" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/index/index/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/index/index.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/index/index/js.jsp" />
+	</definition>
+	
+  	<definition name="admin.category.index" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/category/index/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/category/index.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/category/index/js.jsp" />
+	</definition>
+  	<definition name="admin.category.index-datatable" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/category/index-datatable/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/category/index-datatable.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/category/index-datatable/js.jsp" />
+	</definition>
+  	<definition name="admin.category.add" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/category/add/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/category/add.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/category/add/js.jsp" />
+	</definition>
+  	<definition name="admin.category.edit" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/category/edit/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/category/edit.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/category/edit/js.jsp" />
+	</definition>
+	
+	<definition name="admin.contact.index" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/contact/index/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/contact/index.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/contact/index/js.jsp" />
+	</definition>
+	<definition name="admin.contact.search" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/contact/search/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/contact/search.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/contact/search/js.jsp" />
+	</definition>
+	
+	<definition name="admin.user.index" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/user/index/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/user/index.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/user/index/js.jsp" />
+	</definition>
+	<definition name="admin.user.search" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/user/search/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/user/search.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/user/search/js.jsp" />
+	</definition>
+	<definition name="admin.user.add" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/user/add/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/user/add.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/user/add/js.jsp" />
+	</definition>
+	<definition name="admin.user.edit" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/user/edit/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/user/edit.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/user/edit/js.jsp" />
+	</definition>
+	
+	<definition name="admin.product.index" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/product/index/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/product/index.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/product/index/js.jsp" />
+	</definition>
+	<definition name="admin.product.search" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/product/search/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/product/search.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/product/search/js.jsp" />
+	</definition>
+	<definition name="admin.product.add" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/product/add/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/product/add.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/product/add/js.jsp" />
+	</definition>
+	<definition name="admin.product.edit" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/product/edit/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/product/edit.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/product/edit/js.jsp" />
+	</definition>
+	
+	<definition name="admin.order.index" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/order/index/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/order/index.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/order/index/js.jsp" />
+	</definition>
+	<definition name="admin.order.search" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/order/search/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/order/search.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/order/search/js.jsp" />
+	</definition>
+	<definition name="admin.order.orderitem" extends="admin.template">
+  		<put-attribute name="css" value="/WEB-INF/templates/admin/order/orderitem/css.jsp" />
+	    <put-attribute name="content" value="/WEB-INF/views/admin/order/orderitem.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/admin/order/orderitem/js.jsp" />
+	</definition>
+	
+ 	<!-- PUBLIC TEMPLATE -->
+	<definition name="public.template" template="/WEB-INF/templates/public/template.jsp">
+	    <put-attribute name="css" value="/WEB-INF/templates/public/css.jsp" />
+	    <put-attribute name="header" value="/WEB-INF/templates/public/header.jsp" /><!-- no change -->
+	    <put-attribute name="slider" value="" />
+	    <put-attribute name="left-sidebar" value="/WEB-INF/templates/public/left-sidebar.jsp" /><!-- no change -->
+	    <put-attribute name="content" value="" />
+	    <put-attribute name="footer" value="/WEB-INF/templates/public/footer.jsp" />
+	    <put-attribute name="js" value="/WEB-INF/templates/public/js.jsp" />
+	</definition>
+	<definition name="public.index" extends="public.template">
+	    <put-attribute name="slider" value="/WEB-INF/templates/public/slider.jsp" /><!-- no change -->
+	    <put-attribute name="content" value="/WEB-INF/views/public/index.jsp" /><!-- no change -->
+	</definition>
+	<definition name="public.category" extends="public.template">
+	    <put-attribute name="content" value="/WEB-INF/views/public/category.jsp" /><!-- no change -->
+	</definition>
+	<definition name="public.search" extends="public.template">
+	    <put-attribute name="content" value="/WEB-INF/views/public/search.jsp" /><!-- no change -->
+	</definition>
+	<definition name="public.detail" extends="public.template">
+	    <put-attribute name="content" value="/WEB-INF/views/public/detail.jsp" /><!-- no change -->
+	</definition>
+	<definition name="public.cart" extends="public.template">
+	    <put-attribute name="left-sidebar" value="" /><!-- no change -->
+	    <put-attribute name="content" value="/WEB-INF/views/public/cart.jsp" /><!-- no change -->
+	    <put-attribute name="js" value="/WEB-INF/templates/public/cart/js.jsp" />
+	</definition>
+	<definition name="public.contact" extends="public.template">
+	    <put-attribute name="left-sidebar" value="" /><!-- no change -->
+	    <put-attribute name="content" value="/WEB-INF/views/public/contact.jsp" /><!-- no change -->
+	    <put-attribute name="js" value="/WEB-INF/templates/public/contact/js.jsp" />
+	</definition>
+	<definition name="public.about" extends="public.template">
+	    <put-attribute name="left-sidebar" value="" /><!-- no change -->
+	    <put-attribute name="content" value="/WEB-INF/views/public/about.jsp" /><!-- no change -->
+	</definition>
+	<definition name="public.login" extends="public.template">
+	    <put-attribute name="left-sidebar" value="" /><!-- no change -->
+	    <put-attribute name="content" value="/WEB-INF/views/public/public-login.jsp" /><!-- no change -->
+	</definition>
+	<definition name="public.forgot" extends="public.template">
+	    <put-attribute name="left-sidebar" value="" /><!-- no change -->
+	    <put-attribute name="content" value="/WEB-INF/views/public/public-forgot.jsp" /><!-- no change -->
+	</definition>
+	
+</tiles-definitions>
