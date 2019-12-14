@@ -8,8 +8,7 @@
 	<http use-expressions="true">
 		<csrf disabled="true" />
 		
-		<intercept-url pattern="/admin" access="hasAnyRole('ROLE_ADMIN', 'ROLE_MOD')" />
-		<intercept-url pattern="/admin/" access="hasAnyRole('ROLE_ADMIN', 'ROLE_MOD')" />
+		<intercept-url pattern="/admin/" access="hasAnyRole('ROLE_ADMIN','ROLE_MOD')" />
 		<intercept-url pattern="/admin/category/**" access="hasAnyRole('ROLE_ADMIN', 'ROLE_MOD')" />
 		<intercept-url pattern="/admin/product/**" access="hasAnyRole('ROLE_ADMIN', 'ROLE_MOD')" />
 		<intercept-url pattern="/admin/user/**" access="hasRole('ROLE_ADMIN')" />
@@ -42,5 +41,5 @@
 	
 	<beans:bean id="bcryptEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"></beans:bean>
 	<beans:bean id="myUserDetailsService" class="com.itquocvv.security.MyUserDetailsService" ></beans:bean>
-	<beans:bean id="myCustomAuthenticationSuccessHandler" class="com.itsontran.security.CustomAuthenticationSuccessHandler" ></beans:bean>
+	<beans:bean id="myCustomAuthenticationSuccessHandler" class="com.itquocvv.security.CustomAuthenticationSuccessHandler" ></beans:bean>
 </beans:beans>
